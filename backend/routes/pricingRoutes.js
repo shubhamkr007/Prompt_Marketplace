@@ -28,7 +28,7 @@ router.post("/purchase", async (req,res)=>{
             payment_method_types: ['card'],
             line_items: lineItems,
             mode: 'payment',
-            success_url: `http://localhost:8000/api/v1/plan/success/${data.userId}/${data.price}`,
+            success_url: `https://prompt-marketplace-backend.onrender.com/api/v1/plan/success/${data.userId}/${data.price}`,
             cancel_url: 'http://localhost:3000/pricing',
         });
 
